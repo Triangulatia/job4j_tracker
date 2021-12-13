@@ -15,12 +15,20 @@ public class Library {
         for (int index = 0; index < books.length; index++) {
             System.out.println("Book: " + books[index].getName() + " pages: " + books[index].getPages());
         }
+        changeBooks(books);
+        showCode(books);
+    }
+
+    public static void changeBooks(Book[] books) {
         Book temp = books[0];
         books[0] = books[3];
         books[3] = temp;
         for (int index = 0; index < books.length; index++) {
             System.out.println("Book: " + books[index].getName() + " pages: " + books[index].getPages());
         }
+    }
+
+    public static void showCode(Book[] books) {
         for (int index = 0; index < books.length; index++) {
             if (books[index].getName().equals("Clean code")) {
                 System.out.println("Book: " + books[index].getName() + " pages: " + books[index].getPages());
