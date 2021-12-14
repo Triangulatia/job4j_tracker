@@ -5,7 +5,7 @@ public class Engineer extends Profession {
     private String specialization;
 
     public Engineer(String specialization) {
-        super();
+        super("Ivan", "Ivanov", "High", "12.03.93");
         this.specialization = specialization;
     }
 
