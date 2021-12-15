@@ -4,8 +4,10 @@ public class Dentist extends Doctor {
 
     private boolean therapists;
 
-    public Dentist(boolean therapists) {
-        super("Dental surgeon");
+    public Dentist(boolean therapists, String field,
+                   String name, String surname,
+                   String education, String birthday) {
+        super(field, name, surname, education, birthday);
         this.therapists = therapists;
     }
 

@@ -4,8 +4,10 @@ public class Engineer extends Profession {
 
     private String specialization;
 
-    public Engineer(String specialization) {
-        super("Ivan", "Ivanov", "High", "12.03.93");
+    public Engineer(String specialization, String name,
+                    String surname, String education,
+                    String birthday) {
+        super(name, surname, education, birthday);
         this.specialization = specialization;
     }
 
