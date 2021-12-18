@@ -51,7 +51,7 @@ public class StartUI {
         System.out.print("Enter id: ");
         int id = input.askInt("Enter id: ");
         System.out.print("Enter name: ");
-        String name = input.askStr("Enter id: ");
+        String name = input.askStr("Enter name: ");
         Item item = new Item(name);
         if (tracker.replace(id, item)) {
             System.out.println("Заявка изменена успешно.");
