@@ -28,14 +28,6 @@ public class FindByNameAction implements UserAction {
         } else {
             out.println("Заявки с именем: " + name + " не найдены.");
         }
-//        Item[] items = tracker.findByName(name);
-//        if (items.length > 0) {
-//            for (Item item : items) {
-//                out.println(item);
-//            }
-//        } else {
-//            out.println("Заявки с именем: " + name + " не найдены.");
-//        }
         return true;
     }
 }
